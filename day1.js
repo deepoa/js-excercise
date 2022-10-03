@@ -72,3 +72,33 @@ console.log(ba);
 
 ba.fill("X");
 console.log(ba);
+
+// Concatenating array using concat
+// concat : to concat two arrays
+
+const firstList = [1, 2, 3, 5];
+const secondList = [3, 4, 5, 6, 6];
+console.log(firstList.concat(secondList));
+
+//Getting index an element in arr array
+// indexOf: To check if the item exist in a array . If it exists it return the index otherwise it will return -1 , it gives index of array elements
+
+const thirdList = [1, 2, 3, 4, 5];
+console.log(thirdList.indexOf(5));
+console.log(thirdList.indexOf(0));
+
+// Getting last index of an element in array
+
+// lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.
+console.log(thirdList.lastIndexOf(5));
+
+// Checking array
+// Array.isArray:To check if the data type is an array
+const j = 100;
+console.log(Array.isArray(j));
+
+// Converting array to string
+// toString:Converts array to string
+console.log(thirdList.toString());
+
+// Joining array elements
