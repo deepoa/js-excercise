@@ -102,3 +102,84 @@ console.log(Array.isArray(j));
 console.log(thirdList.toString());
 
 // Joining array elements
+//join: It is used to join the elements of the array, the argument we passed in the join method will be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined between the items.
+
+const numbersj = [1, 2, 3, 4, 54, 5];
+console.log(numbersj.join());
+
+// Slice array elements
+//Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
+
+const arrlice = [1, 2, 3, 4, 5];
+
+console.log(arrlice.slice(0, 2));
+console.log(arrlice.slice(0));
+console.log(arrlice.slice(1));
+console.log(arrlice.slice(4));
+console.log(arrlice.slice(0, 3));
+
+// Splice method in array
+// Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
+
+// console.log(arrlice.splice(0, 3)); **************************************************************
+
+// Adding item to an array using push
+// Push: adding item in the end. To add item to the end of an existing array we use the push method.
+
+const item = ["item1", "item2", "item3"];
+
+item.push("item5");
+console.log(item);
+
+// Removing the end element using pop
+// pop: Removing item in the end.
+item.pop();
+console.log(item);
+
+//Removing an element from the beginning
+//shift: Removing one array element in the beginning of the array.
+
+item.shift();
+console.log(item);
+
+// Add an element from the beginning
+//unshift: Adding array element in the beginning of the array.
+
+item.unshift(5);
+console.log(item);
+
+// Reversing array order
+//reverse: reverse the order of an array.
+
+item.reverse();
+console.log(item);
+
+//Sorting elements in array
+//sort: arrange array elements in ascending order. Sort takes a call back function, we will see how we use sort with a call back function in the coming sections.
+
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+
+console.log(webTechs.sort());
+
+// Array of arrays
+//Array can store different data types including an array itself. Let us create an array of arrays
+
+const firstNums = [1, 2, 3];
+const secondNums = [1, 4, 9];
+
+const arrayOfArray = [
+  [
+    [1, 2, 3],
+    [1, 2, 3],
+  ],
+];
+
+//console.log(arrayOfArray[0]); ***************************************
